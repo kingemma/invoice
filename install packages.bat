@@ -1,0 +1,1 @@
+pip install --default-timeout=60000 -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple  --use-feature=2020-resolver

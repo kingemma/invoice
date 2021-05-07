@@ -9,7 +9,7 @@
    
 ## 模型
    1. 模型下载地址：链接：https://pan.baidu.com/s/1bjtd3ueiUj3rt16p2_YQ2w
-   2. 将下载完毕的模型文件夹models放置于项目根目录下
+   2. 将下载完毕的模型文件夹中的文件拷贝到models目录并放置于项目根目录下
 ## 服务启动
    1. python3 app.py
    2. 端口可自行修改
@@ -34,3 +34,13 @@
 
 ## 参考
 chineseocr https://github.com/chineseocr/chineseocr
+
+## 报错
+	2020-09-20 21:31:45.455714: W tensorflow/stream_executor/platform/default/dso_loader.cc:59] Could not load dynamic library 'libcudart.so.10.1'; dlerror: libcudart.so.10.1: cannot open shared object file: No such file or directory
+	2020-09-20 21:31:45.455738: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+
+原文链接：https://blog.csdn.net/qq_41683065/article/details/108702408
+看报错信息也能看出来时GPU的问题。
+
+查阅资料后时GPU的版本与TensorFlow的版本不一致。
+https://tensorflow.google.cn/install/source#gpu
