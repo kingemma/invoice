@@ -4,6 +4,8 @@
    1. python3.5/3.6
    2. 依赖项安装：pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple 
    3. 有GPU环境的可修改安装requirements.txt对应版本的tensorflow-gpu，config.py文件中控制GPU的开关
+   4. GPU 安装
+   https://developer.nvidia.com/cuda-downloads?target_os=Windows&target_arch=x86_64&target_version=10&target_type=exe_local
 ## 模型架构
     YOLOv3 + CRNN + CTC
    
