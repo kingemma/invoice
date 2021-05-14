@@ -1,3 +1,26 @@
+
+# Anaconda3 install multiple versions Python 
+	https://appuals.com/could-not-find-a-version-that-satisfies-the-requirement-for-tensorflow/
+
+	conda install python=3.6.4
+	conda create -n python3.6
+	conda activate python3.6
+	Change folder to D:\Evan\2-TestGitHub\invoice
+
+	利用Anaconda Navigator (Anaconda3)新建Python环境，
+	利用conda activate python3.6
+	然后切换到项目目录运行 安装 
+	pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple 
+
+
+ File "app.py", line 9, in <module>
+    import cv2
+  File "D:\Anaconda3\lib\site-packages\cv2\__init__.py", line 5, in <module>
+    from .cv2 import *
+ModuleNotFoundError: No module named 'cv2.cv2'
+
+(python3.6) D:\Evan\2-TestGitHub\invoice>pip uninstall opencv-python opencv-contrib-python
+
 # 增值税发票识别 
   识别type：增值税电子普通发票，增值税普通发票，增值税专用发票；识别字段为：发票代码、发票号码、开票日期、校验码、税后金额等
 ## 环境
